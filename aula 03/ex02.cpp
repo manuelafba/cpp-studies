@@ -12,4 +12,6 @@ int main() {
 
     cout << "Horas: " << horas << endl;
     cout << "Minutos: " << minutos;
+
+    return 0;
 }
