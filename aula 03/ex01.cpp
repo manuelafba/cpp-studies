@@ -4,9 +4,7 @@ using namespace std;
 
 int main()
 {
-    float comp;
-    float largura;
-    float altura;
+    float comp, largura, altura;
     
     cout << "Digite a altura, a largura e o comprimento:\n";
     cin >> altura >> largura >> comp;
