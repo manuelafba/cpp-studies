@@ -8,7 +8,7 @@ int main()
     int horas, minutos;
 	cout << "Entre com o número de horas: ";
     cin >> horas;
-    cout << "Entre com o número de minutos: "
+    cout << "Entre com o número de minutos: ";
     cin >> minutos;
 
     cout << "Agora são ";
