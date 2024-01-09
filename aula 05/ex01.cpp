@@ -1,7 +1,7 @@
 #include <iostream>
 using namespace std;
 
-void mostrarTempo(int, int);
+int mostrarTempo(int, int);
 
 int main()
 {
@@ -18,7 +18,7 @@ int main()
 	return 0;
 }
 
-void mostrarTempo(int horas, int minutos) {
+int mostrarTempo(int horas, int minutos) {
     cout << horas << ":" << minutos;
 
 }
