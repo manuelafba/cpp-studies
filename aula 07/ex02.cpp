@@ -10,7 +10,7 @@ int main()
 	beep();
 	cout << "Digite sua senha: ______\b\b\b\b\b\b";
 	int senha = lerSenha();
-	cout << "Obrigado!" << endl;
+	cout << "Obrigada!" << endl;
 
 	return 0;
 }
