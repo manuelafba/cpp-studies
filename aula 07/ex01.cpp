@@ -1,25 +1,24 @@
 #include <iostream>
 using namespace std;
 
-void asciiCode(int);
+void codigoAscii(int);
 
 int main()
 {
-	asciiCode(80);
-	asciiCode(114);
-	asciiCode(111);
-	asciiCode(103);
-	asciiCode(67);
-	asciiCode(111);
-	asciiCode(109);
-	asciiCode(112);
+    codigoAscii(80);
+	codigoAscii(114);
+	codigoAscii(111);
+	codigoAscii(103);
+	codigoAscii(67);
+	codigoAscii(109);
+	codigoAscii(112);
 	cout << endl;
 
 	return 0;
+
 }
 
-void asciiCode(int n)
-{
+void codigoAscii(int n){
 	char ch = n;
 	cout << ch;
 }
