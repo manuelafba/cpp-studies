@@ -12,7 +12,7 @@ int main()
 
     int resultado = int(x1) + int(x2);
 
-    cout << "A adicao inteira dos valores = " << resultado << endl;
+    cout << "Adicao inteira dos valores = " << resultado << endl;
 
     return 0;
 }
