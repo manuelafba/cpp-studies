@@ -1,19 +1,19 @@
 #include <iostream>
 using namespace std;
 
-double resultado(double valores[]){
-    return valores[0] * valores[2] - valores[1];
+int soma(int valores[]){
+    return valores[0] + valores[1] + valores[2] + valores[3] + valores[4];
 }
 
 int main()
 {
-    double valores[3] = {};
+    int valores[5] = {};
 
-    cout << "Entre com os valores do vetor: " << endl;
-    cin >> valores[0] >> valores[1] >> valores[2];
+    cout << "Digite 5 valores: " << endl;
+    cin >> valores[0] >> valores[1] >> valores[2] >> valores[3] >> valores[4];
 
-    double result = resultado(valores);
-    cout << valores[0] << " * " << valores[2] << " - " << valores[1] << " = " << result;
+    int resultado = soma(valores);
+    cout << "Soma do vetor = " << resultado;
 
     return 0;
 }
