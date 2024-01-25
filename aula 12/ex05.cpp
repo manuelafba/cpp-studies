@@ -8,16 +8,14 @@ struct contaBancaria
 };
 
 int main(){
-    contaBancaria conta[10] {
-        {"", 0}
-    };
+    contaBancaria conta = {"", 0};
 
     cout << "Digite seu nome: " << endl;
-    cin >> conta[0].nome;
+    cin >> conta.nome;
     cout << "Digite o valor que deseja depositar: " << endl;
-    cin >> conta[0].saldo;
+    cin >> conta.saldo;
 
-    cout << conta[0].nome << ", seu saldo é de R$" << conta[0].saldo;
+    cout << conta.nome << ", seu saldo é de R$" << conta.saldo;
 
 
     return 0;
