@@ -34,7 +34,6 @@ int main()
 	cout << "Preco: ";
 	cin >> garagem[2].preco;
 
-
 	cout << "\nCarros em Estoque\n";
 	cout << "-----------------\n";
 	cout << garagem[0].modelo << "\t";
