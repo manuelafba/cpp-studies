@@ -1,55 +1,54 @@
 #include <iostream>
 using namespace std;
 
-union CorAuto
-{
-	char nome[10];
+union CorAuto {
+	char nome[20];
 	int num;
-	char codigo[5];
+	char codigo[20];
 };
 
-struct Automovel
+struct Auto
 {
-	char modelo[15];
+	char modelo[20];
 	unsigned ano;
 	CorAuto cor;
 	float preco;
 };
 
-int main()
-{
-	Automovel garagem[10] = 
-	{
-		{"Vectra", 2009, "Azul", 58000},
-		{"Polo", 2008, "Preto", 45000}
+
+int main() {
+    Auto carros[10] {
+		{"Vectra", 2009, "Azul", 58000.00},
+		{"Polo", 2008, "Preto", 45000.00}
 	};
 
-	cout << "Digite os dados do carro\n";
-	cout << "Modelo: ";
-	cin >> garagem[2].modelo;
-	cout << "Ano: ";
-	cin >> garagem[2].ano;
-	cout << "Cor (codigo): ";
-	cin >> garagem[2].cor.codigo;
-	cout << "Preco: ";
-	cin >> garagem[2].preco;
+	cout << "Digite os dados do carro: " << endl;
+	cout << "Modelo: " << endl;
+	cin >> carros[2].modelo;
+	cout << "Ano de fabricacao: " << endl;
+	cin >> carros[2].ano;
+	cout << "Codigo da cor: " << endl;
+	cin >> carros[2].cor.codigo;
+	cout << "Preco: " << endl;
+	cin >> carros[2].preco;
 
-	cout << "\nCarros em Estoque\n";
+	cout << "\nEstoque\n";
 	cout << "-----------------\n";
-	cout << garagem[0].modelo << "\t";
-	cout << garagem[0].ano << "\t";
-	cout << garagem[0].cor.nome << "\t";
-	cout << garagem[0].preco << endl;
+	cout << carros[0].modelo << "\t";
+	cout << carros[0].ano << "\t";
+	cout << carros[0].cor.nome << "\t";
+	cout << carros[0].preco << endl;
 
-	cout << garagem[1].modelo << "\t";
-	cout << garagem[1].ano << "\t";
-	cout << garagem[1].cor.nome << "\t";
-	cout << garagem[1].preco << endl;
+	cout << carros[1].modelo << "\t";
+	cout << carros[1].ano << "\t";
+	cout << carros[1].cor.nome << "\t";
+	cout << carros[1].preco << endl;
 
-	cout << garagem[2].modelo << "\t";
-	cout << garagem[2].ano << "\t";
-	cout << garagem[2].cor.codigo << "\t";
-	cout << garagem[2].preco << endl;
+	cout << carros[2].modelo << "\t";
+	cout << carros[2].ano << "\t";
+	cout << carros[2].cor.codigo << "\t";
+	cout << carros[2].preco << endl;
 
-	return 0;
+
+    return 0;
 }
