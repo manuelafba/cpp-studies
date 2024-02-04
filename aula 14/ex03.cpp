@@ -23,4 +23,6 @@ int main()
 
 	valor = Incrementa(valor);
 	cout << "Resultado apos Incrementa: " << valor << endl;
+
+	return 0;
 }
